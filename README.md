@@ -1,4 +1,4 @@
-# Hyperledger Fabric (Prerequisite)
+# Hyperledger Fabric
 2021-05-30 14:01:57 Sunday
 ## Install cURL
 Command Line tool for transferring data using various network protocols. The name cURL stands for "Client URL".
@@ -60,13 +60,21 @@ Let us verify the version of Go installed.
 `$ go version`
 
 ## Install NodeJS
-Node.js is an open-source, cross-platform, back-end JavaScript runtime environment. 
+Node.js is an open-source, cross-platform, back-end JavaScript runtime environment. Install Node Package Manager (npm) 
 
 `$ sudo apt update`
 
 `$ sudo apt install nodejs`
 
-Let us verify the version of NodeJS installed.
+`$ sudo apt install npm`
+
+Let us verify the version of Node.js and npm installed.
+
+`$ node --version`
+
+`$ npm --version`
+
+Let us verify the version of Node Package Manager installed.
 
 `$ node --version`
 
@@ -80,3 +88,44 @@ Python is an interpreted, high-level, general-purpose programming language.
 Let us verify the version of Python installed.
 
 `$ python --version`
+
+## Deploying Hyperledger Container
+
+Download the latest version of the Hyperledger bootstrap.sh using the following command:
+
+`$ curl -ssL https://raw.githubusercontent.com/hyperledger/fabric/master/scripts/bootstrap.sh > bootstrap.sh`
+
+`$ ./bootstrap.sh`
+
+The **fabric-samples** are downloaded to the current directory. 
+
+Add the fabric-samples/bin folder to the **PATH** environment variable.
+
+`$ export PATH=$PATH:$HOME/Hyperledger/fabric-samples/bin`
+
+`$ cd ~/Hyperledger/fabric-samples/fabcar/javascript`
+
+`$ npm update`
+
+## Launch Hyperledger Fabric
+
+Execute `$ ./startFabric.sh` to launch the Fabric.
+
+`$ cd ~/Hyperledger/fabric-samples/fabcar`
+
+`$ ./startFabric.sh`
+
+`$ cd ~/Hyperledger/fabric-samples/fabcar/javascript`
+
+`$ node enrollAdmin.js`
+
+> Wallet path: /home/prabusivakumar/Hyperledger/fabric-samples/fabcar/javascript/wallet
+Successfully enrolled admin user "admin" and imported it into the wallet
+
+`$ node registerUser.js`
+
+> Wallet path: /home/prabusivakumar/Hyperledger/fabric-samples/fabcar/javascript/wallet
+Successfully registered and enrolled admin user "appUser" and imported it into the wallet
+
+
+
