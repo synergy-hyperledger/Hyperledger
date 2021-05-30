@@ -4,6 +4,7 @@
 Command Line tool for transferring data using various network protocols. The name cURL stands for "Client URL".
 
 `$ sudo apt update && sudo apt upgrade`
+
 `$ sudo apt install curl`
 
 Once the command line tool is installed, run the following command:
@@ -15,11 +16,13 @@ Docker is a set of platform as a service products that use OS-level virtualizati
 Use apt package manager to install Docker package.
 
 `$ sudo apt update `
+
 `$ sudo apt install docker.io`
 
 Start and enable Docker service
 
 `$ sudo systemctl start docker`
+
 `$ sudo systemctl enable docker`
 
 Check the status of Docker service and ensure that it is running. 
@@ -42,12 +45,14 @@ Let us verify the version of Docker installed.
 Docker Compose is a tool for running multi-container Docker applications.
 
 `$ sudo apt update`
+
 `$ sudo apt install docker-compose`
 
 ## Install Go
 Go is a statically typed, compiled programming language. Use apt package manager to install Go Language Package.
 
 `$ sudo apt update`
+
 `$ sudo apt install golang`
 
 Let us verify the version of Go installed.
@@ -58,6 +63,7 @@ Let us verify the version of Go installed.
 Node.js is an open-source, cross-platform, back-end JavaScript runtime environment. 
 
 `$ sudo apt update`
+
 `$ sudo apt install nodejs`
 
 Let us verify the version of NodeJS installed.
@@ -68,6 +74,7 @@ Let us verify the version of NodeJS installed.
 Python is an interpreted, high-level, general-purpose programming language.
 
 `$ sudo apt update`
+
 `$ sudo apt install python`
 
 Let us verify the version of Python installed.
